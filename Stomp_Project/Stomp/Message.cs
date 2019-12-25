@@ -25,5 +25,7 @@ namespace Stomp
             get { return Headers.ContainsKey(header) ? Headers[header] : string.Empty; }
             set { Headers[header] = value; }
         }
+
+       
     }
 }
