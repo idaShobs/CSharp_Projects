@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Basic_Text_Encryptor.Program
 {
-    sealed class Encrypto : IEncryptor
+    class Encrypto : IEncryptor
     {
        
         private List<KeyValuePair<string, char>> _encodingFormat;
