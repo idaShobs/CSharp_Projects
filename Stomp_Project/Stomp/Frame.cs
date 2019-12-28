@@ -4,13 +4,13 @@ using System.Text;
 
 namespace Stomp
 {
-    class Message
+    public class Frame
     {
-        public Message(string command) : this(command, string.Empty) { }
+        public Frame(string command) : this(command, string.Empty) { }
 
-        public Message(string command, string body) : this(command, body, new Dictionary<string, string>()) { }
+        public Frame(string command, string body) : this(command, body, new Dictionary<string, string>()) { }
 
-        internal Message(string command, string body, Dictionary<string, string> headers)
+        internal Frame(string command, string body, Dictionary<string, string> headers)
         {
             Command = command;
             Body = body;

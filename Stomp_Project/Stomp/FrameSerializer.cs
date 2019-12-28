@@ -5,9 +5,9 @@ using System.Text;
 
 namespace Stomp
 {
-    class MessageSerializer
+    class FrameSerializer
     {
-        public string Serialize(Message message)
+        public string Serialize(Frame message)
         {
             var buffer = new StringBuilder();
 
@@ -26,7 +26,7 @@ namespace Stomp
             return buffer.ToString();
         }
 
-        public Message Deserialize(string message)
+        public Frame Deserialize(string message)
         {
             var reader = new StringReader(message);
             var command = reader.ReadLine();
@@ -43,7 +43,7 @@ namespace Stomp
             var body = reader.ReadToEnd() ?? string.Empty;
             body = body.TrimEnd('\r', '\n', '\0');
 
-            return new Message(command, body, headers);
+            return new Frame(command, body, headers);
         }
     }
 }
