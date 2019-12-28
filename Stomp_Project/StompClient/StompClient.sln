@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StompClientApp", "StompClientApp.csproj", "{8C69F840-4F38-4F38-B458-E1EBE159C346}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stomp", "..\Stomp\Stomp.csproj", "{98017F60-0621-494C-BA8C-D4407392C9EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stomp", "..\Stomp\Stomp.csproj", "{98017F60-0621-494C-BA8C-D4407392C9EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StompClientTest", "..\StompClientTest\StompClientTest.csproj", "{447A2F7C-83AD-4027-8B08-70CAB7686134}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{98017F60-0621-494C-BA8C-D4407392C9EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98017F60-0621-494C-BA8C-D4407392C9EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98017F60-0621-494C-BA8C-D4407392C9EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{447A2F7C-83AD-4027-8B08-70CAB7686134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{447A2F7C-83AD-4027-8B08-70CAB7686134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{447A2F7C-83AD-4027-8B08-70CAB7686134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{447A2F7C-83AD-4027-8B08-70CAB7686134}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

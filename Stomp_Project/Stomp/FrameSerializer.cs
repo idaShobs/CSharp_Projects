@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Stomp
 {
-    class FrameSerializer
+    public class FrameSerializer
     {
         public string Serialize(Frame message)
         {

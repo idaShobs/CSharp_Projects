@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Stomp
 {
-    public class Frame
+    public sealed class Frame
     {
         public Frame(string command) : this(command, string.Empty) { }
 

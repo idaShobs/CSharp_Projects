@@ -31,9 +31,7 @@ namespace Stomp
                 while (!tokenSource.IsCancellationRequested)
                 {
                     ArraySegment<Byte> buffer = new ArraySegment<byte>(new Byte[8192]);
-
                     WebSocketReceiveResult result = null;
-
                     using (var ms = new MemoryStream())
                     {
                         do
